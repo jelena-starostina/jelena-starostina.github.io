@@ -1,30 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио!</title>
+    <title>Мое портфолио - Креативный разработчик</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-     	Я начинающий, но способный разработчик ПО!   
-    </header> 
-    <div class="container">
-    	Мои работы
-    	<div class="my_projects">
-    		<a href="Arcanoid/index.html">Arcanoid</a>
-    		<br>
-    	
-		
-    	</div>
-    </div> 
-    <footer>
-    	Готов к сотрудничеству!
-	mailto:<a href="#">Me@ee.ee</a>
+    <!-- Анимированный фон -->
+    <div class="animated-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
 
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">DevPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <h1 class="hero-title">Я начинающий, но способный разработчик ПО!</h1>
+            <p class="hero-subtitle">Создаю интерактивные и визуально привлекательные веб-приложения</p>
+            <button class="cta-button">Посмотреть мои работы</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/me.png" alt="Портрет" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Мои работы</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-tilt>
+                <div class="card-header">
+                    <div class="card-icon">🎮</div>
+                </div>
+                <div class="card-content">
+                    <h3>Arcanoid Game</h3>
+                    <p>Классическая игра Arcanoid с красивой графикой и плавной игровой механикой</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">Canvas</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <a href="Arcanoid/index.html" class="card-link">Играть →</a>
+            </div>
+
+            <div class="project-card coming-soon" data-tilt>
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                </div>
+                <div class="card-content">
+                    <h3>Будущий проект</h3>
+                    <p>Скоро здесь появятся мои новые потрясающие проекты</p>
+                    <div class="card-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="card-link disabled">Скоро</div>
+            </div>
+
+            <div class="project-card coming-soon" data-tilt>
+                <div class="card-header">
+                    <div class="card-icon">⚡</div>
+                </div>
+                <div class="card-content">
+                    <h3>Инновационный проект</h3>
+                    <p>Новое приложение с передовыми технологиями</p>
+                    <div class="card-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="card-link disabled">Скоро</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Готов к сотрудничеству!</h2>
+        <div class="contact-content">
+            <p>Хотите работать вместе? Свяжитесь со мной:</p>
+            <a href="mailto:me@ee.ee" class="wave-button">
+                <span class="wave-text">📧 me@ee.ee</span>
+                <span class="wave"></span>
+                <span class="wave"></span>
+                <span class="wave"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 DevPortfolio. Все права защищены.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
